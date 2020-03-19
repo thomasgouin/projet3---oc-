@@ -1,0 +1,120 @@
+.main-bloc{
+    position: fixed;
+    top: 10.5vh;
+    bottom: 6.3vh;
+    width: 100%;
+}
+
+.sommaire{
+    width: 84%;
+    height: 66.9vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 3.7vh auto;
+    &__carte{
+        width: 145px;
+        height: 210px;
+        box-shadow: lightgray 0px 0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3.7vh;
+    }
+}
+#note-musique{
+    width: 20%;
+    position: absolute;
+    top: 25%;
+    right: 40%;
+}
+.noteenchantee{
+    background-color: #fcdfdb;
+    position: relative;
+    &__h2{
+        font-family: 'Devonshire', cursive;
+        text-align: center;
+        font-size: 90%;
+        font-weight: unset;
+        line-height: 2em;
+
+    }
+    &__menu{
+        text-transform: uppercase;
+        font-family: 'Caveat';
+        font-size: 1.5em;
+    }
+}
+.chicalafrancaise{
+    background-color: #fff5fe;
+    &__h2{
+        font-family: Junicode;
+        font-size: 90%;
+        font-weight: unset;
+        text-align: center;
+        background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 40%, #6b30eb 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 2em;
+    }
+    &__menu{
+        font-family: 'Caveat';
+        font-size: 1.5em;
+    }
+}
+.delicedespapilles{
+    background-color: #f9f9f9;
+    &__h2{
+        font-family: 'Dancing Sript', cursive;
+        font-size: 90%;
+        font-weight: unset;
+        text-align: center;
+        background: -webkit-linear-gradient(-45deg, #1530b7 20%, #56a7e6 60%, #56a7e6 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 2em;
+    }
+    &__menu{
+        font-family: 'Caveat';
+        font-size: 1.5em;
+    }
+}
+.palettedugout{
+    background-color: #fdfffd;
+    &__h2{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 90%;
+        font-weight: unset;
+        text-align: center;
+        background: -webkit-linear-gradient(-45deg, #55924d 20%, #c8fa80 60%, #c8fa80 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 2em;
+    }
+    &__menu{
+        font-family: 'Caveat';
+        font-size: 1.5em;
+    }
+}
+
+.prochainement{
+    background-color: $color-secondary;
+    border-radius: 5px;
+    color: $color-primary;
+    font-family: Montserrat;
+    font-weight: 200;
+    width: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    margin-left: 28%
+}
+
+
+

@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  color: #fdcb46;
+}
+
+header {
+  width: 100%;
+  background-color: #579c87;
+  height: 10.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-family: Montserrat;
+  font-size: 80%;
+  font-weight: normal;
+}
+
+footer {
+  width: 100%;
+  background-color: #579c87;
+  height: 6.3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 80%;
+}
+
+.mentionslegales {
+  width: 44%;
+  color: #fdcb46;
+  padding-left: 5%;
+}
+
+.contactez-nous {
+  width: 44%;
+  color: #fdcb46;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.main-bloc {
+  position: fixed;
+  top: 10.5vh;
+  bottom: 6.3vh;
+  width: 100%;
+}
+
+.sommaire {
+  width: 84%;
+  height: 66.9vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 3.7vh auto;
+}
+.sommaire__carte {
+  width: 145px;
+  height: 210px;
+  box-shadow: lightgray 0px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.7vh;
+}
+
+#note-musique {
+  width: 20%;
+  position: absolute;
+  top: 25%;
+  right: 40%;
+}
+
+.noteenchantee {
+  background-color: #fcdfdb;
+  position: relative;
+}
+.noteenchantee__h2 {
+  font-family: "Devonshire", cursive;
+  text-align: center;
+  font-size: 90%;
+  font-weight: unset;
+  line-height: 2em;
+}
+.noteenchantee__menu {
+  text-transform: uppercase;
+  font-family: "Caveat";
+  font-size: 1.5em;
+}
+
+.chicalafrancaise {
+  background-color: #fff5fe;
+}
+.chicalafrancaise__h2 {
+  font-family: Junicode;
+  font-size: 90%;
+  font-weight: unset;
+  text-align: center;
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 40%, #6b30eb 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 2em;
+}
+.chicalafrancaise__menu {
+  font-family: "Caveat";
+  font-size: 1.5em;
+}
+
+.delicedespapilles {
+  background-color: #f9f9f9;
+}
+.delicedespapilles__h2 {
+  font-family: "Dancing Sript", cursive;
+  font-size: 90%;
+  font-weight: unset;
+  text-align: center;
+  background: -webkit-linear-gradient(-45deg, #1530b7 20%, #56a7e6 60%, #56a7e6 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 2em;
+}
+.delicedespapilles__menu {
+  font-family: "Caveat";
+  font-size: 1.5em;
+}
+
+.palettedugout {
+  background-color: #fdfffd;
+}
+.palettedugout__h2 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 90%;
+  font-weight: unset;
+  text-align: center;
+  background: -webkit-linear-gradient(-45deg, #55924d 20%, #c8fa80 60%, #c8fa80 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 2em;
+}
+.palettedugout__menu {
+  font-family: "Caveat";
+  font-size: 1.5em;
+}
+
+.prochainement {
+  background-color: #579c87;
+  border-radius: 5px;
+  color: #fdcb46;
+  font-family: Montserrat;
+  font-weight: 200;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+  margin-left: 28%;
+}
+
+/*# sourceMappingURL=style.css.map */

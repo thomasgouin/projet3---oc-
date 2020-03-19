@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    background-color: $color-secondary;
+    height: 6.3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 80%;
+}
+
+.mentionslegales{
+    width: 44%;
+    color: $color-primary;
+    padding-left: 5%;
+}
+
+.contactez-nous{
+    width: 44%;
+    color: $color-primary;
+    padding-right: 5%;
+    text-align: right;
+}
