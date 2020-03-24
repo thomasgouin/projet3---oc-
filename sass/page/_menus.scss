@@ -1,0 +1,41 @@
+
+.pagemenu__titre{
+    text-align: center;
+    margin-top: $marges-horizontales;
+}
+.menu{
+    background-color:  #fcdfdb;
+    margin-top: $marges-horizontales/2;
+    margin-right: $marges-verticales;
+    margin-left: $marges-verticales;
+    height: 66.8vh;
+    padding: $marges-horizontales;
+    &__restaurant{
+        text-align: center;
+        font-size: 1.5em;
+        &__petit{
+            font-size: 1.2em;
+            margin-top: $marges-horizontales;
+            text-align: center;
+        }
+    }
+    &__categorie{
+        display: flex;
+        justify-content: space-around;
+        margin-top: $marges-horizontales;
+        font-size: small;
+    }
+    &__plats{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: xx-small;
+        line-height: 2em;
+        &__prix{
+            width: 10%;
+            text-align: right;
+        }
+    }
+}
+
+
