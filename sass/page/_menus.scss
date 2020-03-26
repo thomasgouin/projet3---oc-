@@ -2,21 +2,49 @@
 .pagemenu__titre{
     text-align: center;
     margin-top: $marges-horizontales;
+    font-size: 1.1em;
+    font-family: 'lato';
 }
 .menu{
     background-color:  #fcdfdb;
+    color: #3d1319;
     margin-top: $marges-horizontales/2;
-    margin-right: $marges-verticales;
-    margin-left: $marges-verticales;
+    margin-right: $marges-verticales + 5px;
+    margin-left: $marges-verticales + 5px;
     height: 66.8vh;
+    font-family: 'Caveat';
+    font-weight: 400;
     padding: $marges-horizontales;
+    box-shadow: 0 0 5px 1px lightgray;
     &__restaurant{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.3em;
+        margin-top: $marges-horizontales*1;
+        position: relative;
+        width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+        &::before{
+            content: url(./img/note-musique-40px.png);
+            display: block;
+            position: absolute;
+            top: -40px;
+            left: +70px;
+        }
         &__petit{
-            font-size: 1.2em;
-            margin-top: $marges-horizontales;
+            font-size: 1em;
+            margin-top: $marges-horizontales/2;
             text-align: center;
+            width: 130px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            &::before{
+                content: url(./img/note-musique-20px.png);
+                display: block;
+                position: absolute;
+                left: -10px;
+            }
         }
     }
     &__categorie{
@@ -24,16 +52,18 @@
         justify-content: space-around;
         margin-top: $marges-horizontales;
         font-size: small;
-    }
+        }
     &__plats{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-size: xx-small;
+        font-size: .65em;
         line-height: 2em;
         &__prix{
             width: 10%;
             text-align: right;
+            font-weight: 700;
+            font-size: 1.2em;
         }
     }
 }
