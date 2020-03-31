@@ -1,18 +1,14 @@
 
 .sommaire{
-    width: 84%;
-    height: 66.9vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin: 3.7vh auto 0 auto;
+    margin: 3.7vh 30px 0 30px;
     &__carte{
-        width: 46%;
-        min-width: 145px;
-        max-width: 204px;
-        height: 31.6vh;
+        width: 145px;
+        height: 210px;
         box-shadow: lightgray 0px 0px 5px;
         display: flex;
         align-items: center;
@@ -104,13 +100,13 @@
     color: $color-primary;
     font-family: 'Montserrat';
     font-weight: 200;
+    height: 35px;
     width: 44%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
     margin-left: 28%;
-    margin-top: $marges-horizontales;
+    margin-bottom: 3.7vh;
 }
 
 
