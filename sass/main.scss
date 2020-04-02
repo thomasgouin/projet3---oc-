@@ -1,11 +1,13 @@
 @import "./utilitaires/variables";
 @import "./base/base";
+@import "./composants/mixins";
 
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/mainbloc";
 
-@import "./utilitaires/mediaquerries";
-
 @import "./page/menus";
 @import "./page/home";
+
+
+@import "./utilitaires/mediaquerries";

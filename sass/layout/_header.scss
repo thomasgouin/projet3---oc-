@@ -1,14 +1,14 @@
 header{
     width: 100%;
     background-color: $color-secondary;
-    height: 10.5vh;
+    min-height: 10.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     top: 0;
-    z-index: 30;
-    font-family: Montserrat;
-    font-size: 80%;
-    font-weight: normal;
+    font-family: $main-font;
+    font-size: 1em;
+    font-weight: bold;
+    z-index: 100000;
 }

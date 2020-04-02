@@ -58,28 +58,28 @@ h1 {
 header {
   width: 100%;
   background-color: #579c87;
-  height: 10.5vh;
+  min-height: 10.5%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 30;
-  font-family: Montserrat;
-  font-size: 80%;
-  font-weight: normal;
+  font-family: "Montserrat";
+  font-size: 1em;
+  font-weight: bold;
+  z-index: 100000;
 }
 
 footer {
   width: 100%;
   background-color: #579c87;
-  height: 6.3vh;
+  min-height: 6.3vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   bottom: 0;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: 200;
   font-size: 80%;
 }
@@ -88,6 +88,7 @@ footer {
   width: 44%;
   color: #fdcb46;
   padding-left: 5%;
+  text-decoration: none;
 }
 
 .contactez-nous {
@@ -95,200 +96,127 @@ footer {
   color: #fdcb46;
   padding-right: 5%;
   text-align: right;
+  text-decoration: none;
 }
 
-.main-bloc {
-  margin-top: 10.5vh;
-  width: 100%;
-  height: 83vh;
+main {
+  margin-top: 14.2vh;
+  margin-bottom: 10vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  min-height: 75.8vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: relative;
-}
-
-.pagemenu__titre {
-  text-align: center;
-  margin-top: 25px;
-  font-size: 1.1em;
-  font-family: "lato";
-}
-
-.menu {
-  background-color: #fcdfdb;
-  color: #3d1319;
-  margin-top: 12.5px;
-  margin-right: 30px;
-  margin-left: 30px;
-  height: 66.8vh;
-  font-family: "Caveat";
-  font-weight: 400;
-  padding: 25px;
-  box-shadow: 0 0 5px 1px lightgray;
-}
-.menu__restaurant {
-  text-align: center;
-  font-size: 1.3em;
-  margin-top: 25px;
-  position: relative;
-  width: 175px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu__restaurant::before {
-  content: url(./img/note-musique-40px.png);
-  display: block;
-  position: absolute;
-  top: -40px;
-  left: 70px;
-}
-.menu__restaurant__petit {
-  font-size: 1em;
-  margin-top: 12.5px;
-  text-align: center;
-  width: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-.menu__restaurant__petit::before {
-  content: url(./img/note-musique-20px.png);
-  display: block;
-  position: absolute;
-  left: -10px;
-}
-.menu__categorie {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 25px;
-  font-size: small;
-}
-.menu__plats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-size: 0.65em;
-  line-height: 2em;
-}
-.menu__plats__prix {
-  width: 10%;
-  text-align: right;
-  font-weight: 700;
-  font-size: 1.2em;
 }
 
 .sommaire {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 3.7vh 30px 0 30px;
+  justify-content: space-around;
 }
 .sommaire__carte {
   width: 145px;
   height: 210px;
-  box-shadow: lightgray 0px 0px 5px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 3.7vh;
-}
-
-#note-musique {
-  width: 20%;
-  position: absolute;
-  top: 25%;
-  right: 40%;
-}
-
-.noteenchantee {
-  background-color: #fcdfdb;
-  position: relative;
-}
-.noteenchantee__h2 {
-  font-family: "Devonshire", cursive;
   text-align: center;
-  font-size: 90%;
-  font-weight: unset;
-  line-height: 2em;
-}
-.noteenchantee__menu {
-  text-transform: uppercase;
-  font-family: "Caveat";
-  font-size: 1.5em;
-}
-
-.chicalafrancaise {
-  background-color: #fff5fe;
-}
-.chicalafrancaise__h2 {
-  font-family: Junicode;
-  font-size: 90%;
-  font-weight: unset;
-  text-align: center;
-  background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 40%, #6b30eb 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 2em;
-}
-.chicalafrancaise__menu {
-  font-family: "Caveat";
-  font-size: 1.5em;
-}
-
-.delicedespapilles {
-  background-color: #f9f9f9;
-}
-.delicedespapilles__h2 {
-  font-family: "Dancing Sript", cursive;
-  font-size: 90%;
-  font-weight: unset;
-  text-align: center;
-  background: -webkit-linear-gradient(-45deg, #1530b7 20%, #56a7e6 60%, #56a7e6 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 2em;
-}
-.delicedespapilles__menu {
-  font-family: "Caveat";
-  font-size: 1.5em;
-}
-
-.palettedugout {
-  background-color: #fdfffd;
-}
-.palettedugout__h2 {
-  font-family: "Kaushan Script", cursive;
-  font-size: 90%;
-  font-weight: unset;
-  text-align: center;
-  background: -webkit-linear-gradient(-45deg, #55924d 20%, #c8fa80 60%, #c8fa80 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 2em;
-}
-.palettedugout__menu {
-  font-family: "Caveat";
-  font-size: 1.5em;
+  margin-bottom: 25px;
+  box-shadow: 0px 0px 6px #00000029;
+  font-size: 10px;
 }
 
 .prochainement {
   background-color: #579c87;
-  border-radius: 5px;
-  color: #fdcb46;
   font-family: "Montserrat";
-  font-weight: 200;
-  height: 35px;
-  width: 44%;
+  color: #fdcb46;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 28%;
-  margin-bottom: 3.7vh;
+  text-decoration: none;
+  margin: 0 auto;
+  height: 5.2vh;
+  border-radius: 10px;
+  width: 60%;
+  min-width: 145px;
+}
+
+.noteenchantee {
+  background-color: #FBDFDC;
+  font-family: "Devonshire";
+  color: #3D1319;
+}
+.noteenchantee__h2 {
+  position: relative;
+  font-weight: 400;
+}
+.noteenchantee__h2::before {
+  content: url(/img/note-de-musique-home.svg);
+  position: absolute;
+  top: -25px;
+  left: 42%;
+  display: block;
+}
+.noteenchantee__menu {
+  text-transform: uppercase;
+  font-family: "Itim";
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.delicedespapilles {
+  background-color: #F9F9F9;
+  font-family: "Dancing Script";
+}
+.delicedespapilles__h2 {
+  background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delicedespapilles__menu {
+  font-family: "Chilanka";
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.chicalafrancaise {
+  font-family: "Kurale";
+  background-color: #FFF5FF;
+  font-size: 8px;
+}
+.chicalafrancaise__h2 {
+  background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.chicalafrancaise__menu {
+  font-family: "Abril Fatface";
+  font-size: 1.3em;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 10px;
+  color: #C67412;
+}
+
+.palettedugout {
+  font-family: "Kaushan Script";
+  background-color: #FDFFFD;
+}
+.palettedugout__h2 {
+  background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}
+.palettedugout__menu {
+  font-family: "Chilanka";
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

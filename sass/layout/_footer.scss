@@ -1,13 +1,13 @@
 footer{
     width: 100%;
     background-color: $color-secondary;
-    height: 6.3vh;
+    min-height: 6.3vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     bottom: 0;
-    font-family: Montserrat;
+    font-family: $main-font;
     font-weight: 200;
     font-size: 80%;
 }
@@ -16,6 +16,7 @@ footer{
     width: 44%;
     color: $color-primary;
     padding-left: 5%;
+    text-decoration: none;
 }
 
 .contactez-nous{
@@ -23,4 +24,5 @@ footer{
     color: $color-primary;
     padding-right: 5%;
     text-align: right;
+    text-decoration: none;
 }

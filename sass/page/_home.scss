@@ -1,113 +1,88 @@
-
 .sommaire{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    margin: 3.7vh 30px 0 30px;
+    justify-content: space-around;
     &__carte{
         width: 145px;
         height: 210px;
-        box-shadow: lightgray 0px 0px 5px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        margin-bottom: 3.7vh;
-    }
-}
-#note-musique{
-    width: 20%;
-    position: absolute;
-    top: 25%;
-    right: 40%;
-}
-.noteenchantee{
-    background-color: #fcdfdb;
-    position: relative;
-    &__h2{
-        font-family: 'Devonshire', cursive;
         text-align: center;
-        font-size: 90%;
-        font-weight: unset;
-        line-height: 2em;
+        margin-bottom: 25px;
+        box-shadow: 0px 0px 6px #00000029;
+        font-size: 10px;
+    }
 
-    }
-    &__menu{
-        text-transform: uppercase;
-        font-family: 'Caveat';
-        font-size: 1.5em;
-    }
-}
-.chicalafrancaise{
-    background-color: #fff5fe;
-    &__h2{
-        font-family: Junicode;
-        font-size: 90%;
-        font-weight: unset;
-        text-align: center;
-        background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 40%, #6b30eb 80%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 2em;
-    }
-    &__menu{
-        font-family: 'Caveat';
-        font-size: 1.5em;
-    }
-}
-.delicedespapilles{
-    background-color: #f9f9f9;
-    &__h2{
-        font-family: 'Dancing Sript', cursive;
-        font-size: 90%;
-        font-weight: unset;
-        text-align: center;
-        background: -webkit-linear-gradient(-45deg, #1530b7 20%, #56a7e6 60%, #56a7e6 80%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 2em;
-    }
-    &__menu{
-        font-family: 'Caveat';
-        font-size: 1.5em;
-    }
-}
-.palettedugout{
-    background-color: #fdfffd;
-    &__h2{
-        font-family: 'Kaushan Script', cursive;
-        font-size: 90%;
-        font-weight: unset;
-        text-align: center;
-        background: -webkit-linear-gradient(-45deg, #55924d 20%, #c8fa80 60%, #c8fa80 80%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        line-height: 2em;
-    }
-    &__menu{
-        font-family: 'Caveat';
-        font-size: 1.5em;
-    }
 }
 
 .prochainement{
-    background-color: $color-secondary;
-    border-radius: 5px;
-    color: $color-primary;
-    font-family: 'Montserrat';
-    font-weight: 200;
-    height: 35px;
-    width: 44%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 28%;
-    margin-bottom: 3.7vh;
+    @include bouton;
+    margin: 0 auto;
+    height: 5.2vh;
+    border-radius: 10px;
+    width: 60%;
+    min-width: 145px;
 }
 
+.noteenchantee{
+    @include noteenchantee;
+    &__h2{
+        position: relative;
+        font-weight: 400;
+        &::before{
+            content: url(/img/note-de-musique-home.svg);
+            position: absolute;
+            top: -25px;
+            left: 42%;
+            display: block;
+        }
+    }
+    &__menu{
+        text-transform: uppercase;
+        font-family: 'Itim';
+        @include texteMenu;
+    }
+}
 
+.delicedespapilles{
+    @include delicepapilles;
+    &__h2{
+        background: -webkit-linear-gradient(-45deg, #1530b7 10%, #56a7e6 60%, #56a7e6 80%);
+        @include degradetitre;
+    }
+    &__menu{
+        font-family: 'Chilanka';
+        @include texteMenu;
+    }
+}
 
+.chicalafrancaise{
+    @include chicfrancaise;
+    font-size: 8px;
+    &__h2{
+        background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
+        @include degradetitre;
+    }
+    &__menu{
+        font-family: 'Abril Fatface';
+        font-size: 1.3em;
+        font-weight: 400;
+        @include texteMenu;
+        color: #C67412;
+    }
+}
+
+.palettedugout{
+    @include palettegout;
+    &__h2{
+        background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
+        @include degradetitre;
+        font-weight: 400;
+    }
+    &__menu{
+        font-family: 'Chilanka';
+        @include texteMenu;
+    }
+}
