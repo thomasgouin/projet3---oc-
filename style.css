@@ -1,16 +1,87 @@
-body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html {
+  font-size: 10px;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,8 +90,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -28,16 +108,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -48,7 +132,7 @@ table {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 h1 {
@@ -65,7 +149,7 @@ header {
   position: fixed;
   top: 0;
   font-family: "Montserrat";
-  font-size: 1em;
+  font-size: 1.5rem;
   font-weight: bold;
   z-index: 100000;
 }
@@ -81,7 +165,7 @@ footer {
   bottom: 0;
   font-family: "Montserrat";
   font-weight: 200;
-  font-size: 80%;
+  font-size: 1.5rem;
 }
 
 .mentionslegales {
@@ -102,8 +186,8 @@ footer {
 main {
   margin-top: 14.2vh;
   margin-bottom: 10vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
   min-height: 75.8vh;
   display: flex;
   flex-direction: column;
@@ -114,10 +198,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-size: 1rem;
 }
 .sommaire__carte {
-  width: 145px;
-  height: 210px;
+  width: 38.7vw;
+  max-width: 145px;
+  height: 56vw;
+  max-height: 220px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -125,7 +212,6 @@ main {
   text-align: center;
   margin-bottom: 25px;
   box-shadow: 0px 0px 6px #00000029;
-  font-size: 10px;
 }
 
 .prochainement {
@@ -136,11 +222,14 @@ main {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  margin: 0 auto;
-  height: 5.2vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vw;
+  min-height: 30px;
   border-radius: 10px;
   width: 60%;
   min-width: 145px;
+  font-size: 1.5rem;
 }
 
 .noteenchantee {
@@ -185,7 +274,7 @@ main {
 .chicalafrancaise {
   font-family: "Kurale";
   background-color: #FFF5FF;
-  font-size: 8px;
+  font-size: 0.8rem;
 }
 .chicalafrancaise__h2 {
   background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
@@ -199,7 +288,7 @@ main {
   font-weight: 400;
   display: inline-block;
   margin-top: 10px;
-  color: #C67412;
+  color: #c67412;
 }
 
 .palettedugout {
@@ -217,6 +306,75 @@ main {
   font-family: "Chilanka";
   display: inline-block;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  header {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+
+  main {
+    margin-right: 13.2vw;
+    margin-left: 13.2vw;
+  }
+
+  .sommaire__carte {
+    width: 29vw;
+    min-width: 180px;
+    max-width: 222px;
+    height: 42vw;
+    min-height: 260px;
+    max-height: 322px;
+    font-size: 1.5rem;
+  }
+
+  .prochainement {
+    font-size: 3rem;
+    min-width: 300px;
+  }
+}
+@media screen and (min-width: 901px) {
+  header {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+
+  main {
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border: yellow solid 3px;
+  }
+
+  .sommaire {
+    border: blue solid 2px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sommaire__carte {
+    width: 19vw;
+    min-width: 180px;
+    max-width: 248px;
+    height: 27vw;
+    min-height: 260px;
+    max-height: 358px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-right: 2vw;
+  }
+
+  .prochainement {
+    font-size: 3rem;
+    min-width: 400px;
+    max-width: 600px;
+    height: 90px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

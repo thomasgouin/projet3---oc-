@@ -1,0 +1,65 @@
+@media screen AND (min-width: 500px) AND (max-width: 900px) {
+  header {
+    font-size: 2.5rem;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  main {
+    margin-right: 13.2vw;
+    margin-left: 13.2vw;
+  }
+
+  .sommaire {
+    &__carte {
+      width: 29vw;
+      min-width: 180px;
+      max-width: 222px;
+      height: 42vw;
+      min-height: 260px;
+      max-height: 322px;
+      font-size: 1.5rem;
+    }
+  }
+  .prochainement {
+    font-size: 3rem;
+    min-width: 300px;
+  }
+}
+
+@media screen AND (min-width: 901px) {
+  header {
+    font-size: 2.5rem;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  main {
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border: yellow solid 3px;
+  }
+
+  .sommaire {
+    border: blue solid 2px;
+    justify-content: space-between;
+    align-items: center;
+    &__carte {
+      width: 19vw;
+      min-width: 180px;
+      max-width: 248px;
+      height: 27vw;
+      min-height: 260px;
+      max-height: 358px;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      margin-right: 2vw;
+    }
+  }
+  .prochainement {
+    font-size: 3rem;
+    min-width: 400px;
+    max-width: 600px;
+    height: 90px;
+  }
+}
