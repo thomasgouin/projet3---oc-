@@ -233,20 +233,21 @@ main {
 }
 
 .noteenchantee {
-  background-color: #FBDFDC;
+  background-color: #fbdfdc;
   font-family: "Devonshire";
-  color: #3D1319;
+  color: #3d1319;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .noteenchantee__h2 {
   position: relative;
   font-weight: 400;
+  margin-top: 2%;
 }
-.noteenchantee__h2::before {
-  content: url(/img/note-de-musique-home.svg);
-  position: absolute;
-  top: -25px;
-  left: 42%;
-  display: block;
+.noteenchantee__svg {
+  width: 10%;
 }
 .noteenchantee__menu {
   text-transform: uppercase;
@@ -256,7 +257,7 @@ main {
 }
 
 .delicedespapilles {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   font-family: "Dancing Script";
 }
 .delicedespapilles__h2 {
@@ -273,7 +274,7 @@ main {
 
 .chicalafrancaise {
   font-family: "Kurale";
-  background-color: #FFF5FF;
+  background-color: #fff5ff;
   font-size: 0.8rem;
 }
 .chicalafrancaise__h2 {
@@ -293,7 +294,7 @@ main {
 
 .palettedugout {
   font-family: "Kaushan Script";
-  background-color: #FDFFFD;
+  background-color: #fdfffd;
 }
 .palettedugout__h2 {
   background: -webkit-linear-gradient(-45deg, #55924d 10%, #c8fa80 60%, #c8fa80 80%);
@@ -335,6 +336,11 @@ main {
   .prochainement {
     font-size: 3rem;
     min-width: 300px;
+    height: 6.3vh;
+  }
+
+  .chicalafrancaise {
+    font-size: 1.1rem;
   }
 }
 @media screen and (min-width: 901px) {
@@ -349,21 +355,19 @@ main {
   main {
     margin-right: 8vw;
     margin-left: 8vw;
-    border: yellow solid 3px;
   }
 
   .sommaire {
-    border: blue solid 2px;
     justify-content: space-between;
     align-items: center;
   }
   .sommaire__carte {
     width: 19vw;
-    min-width: 180px;
-    max-width: 248px;
+    min-width: 170px;
+    max-width: 400px;
     height: 27vw;
     min-height: 260px;
-    max-height: 358px;
+    max-height: 550px;
     font-size: 1.5rem;
     margin-bottom: 0;
     margin-right: 2vw;
@@ -373,7 +377,16 @@ main {
     font-size: 3rem;
     min-width: 400px;
     max-width: 600px;
-    height: 90px;
+    height: 6.3vh;
+  }
+
+  .chicalafrancaise {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sommaire__carte {
+    font-size: 1.5rem;
   }
 }
 

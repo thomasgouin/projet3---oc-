@@ -32,16 +32,17 @@
 
 .noteenchantee {
   @include noteenchantee;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   &__h2 {
     position: relative;
     font-weight: 400;
-    &::before {
-      content: url(/img/note-de-musique-home.svg);
-      position: absolute;
-      top: -25px;
-      left: 42%;
-      display: block;
-    }
+    margin-top: 2%;
+  }
+  &__svg {
+    width: 10%;
   }
   &__menu {
     text-transform: uppercase;

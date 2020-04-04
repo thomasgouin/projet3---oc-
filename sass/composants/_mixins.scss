@@ -1,43 +1,43 @@
 @mixin bouton {
-    background-color: $color-secondary;
-    font-family: $main-font;
-    color: $color-primary;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: $color-secondary;
+  font-family: $main-font;
+  color: $color-primary;
 
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
 }
 
 @mixin texteMenu {
-    display: inline-block;
-    margin-top: 10px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 @mixin noteenchantee {
-    background-color: #FBDFDC;
-    font-family: "Devonshire";
-    color: #3D1319;
+  background-color: #fbdfdc;
+  font-family: "Devonshire";
+  color: #3d1319;
 }
 
 @mixin delicepapilles {
-    background-color: #F9F9F9;
-    font-family: 'Dancing Script';
+  background-color: #f9f9f9;
+  font-family: "Dancing Script";
 }
 
 @mixin palettegout {
-    font-family: 'Kaushan Script';
-    background-color: #FDFFFD;
+  font-family: "Kaushan Script";
+  background-color: #fdfffd;
 }
 
 @mixin chicfrancaise {
-    font-family: 'Kurale';
-    background-color: #FFF5FF;
+  font-family: "Kurale";
+  background-color: #fff5ff;
 }
 
-@mixin degradetitre{
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@mixin degradetitre {
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
