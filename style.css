@@ -206,7 +206,7 @@ main {
   background-color: #fbdfdc;
   font-family: "Devonshire";
   color: #3d1319;
-  margin: 30px 8vw 0 8vw;
+  margin: 30px 5vw 0 5vw;
   height: 618px;
   display: flex;
   flex-direction: column;
@@ -219,26 +219,20 @@ main {
 }
 .menu__restaurant {
   font-size: 2rem;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   font-weight: 300;
 }
-.menu__categorie {
+.menu__titre {
   font-family: "Kalam";
-  font-weight: 200;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 23%;
-}
-.menu__categorie__titre {
   font-weight: 300;
   font-size: 1.4rem;
+  margin: 0 auto;
   position: relative;
+  text-align: center;
   height: 1.4rem;
   width: 10rem;
 }
-.menu__categorie__titre::before {
+.menu__titre::before {
   content: url(/img/separateur-n-enchantee.svg);
   display: block;
   height: 1rem;
@@ -247,7 +241,7 @@ main {
   left: -8rem;
   bottom: 0.5rem;
 }
-.menu__categorie__titre::after {
+.menu__titre::after {
   content: url(/img/separateur-n-enchantee.svg);
   display: block;
   height: 1rem;
@@ -255,6 +249,23 @@ main {
   position: absolute;
   right: -8rem;
   bottom: 0.5rem;
+}
+.menu__categorie {
+  font-family: "Kalam";
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 18%;
+}
+.menu__categorie__plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__categorie__prix {
+  font-weight: 400;
 }
 .menu__restaurant-petit {
   margin: 0 auto;
