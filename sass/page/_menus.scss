@@ -1,3 +1,71 @@
+.pagemenu-titre {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-
-
+.menu {
+  @include noteenchantee;
+  margin: 30px 8vw 0 8vw;
+  height: 618px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  &__svg-top {
+    width: 8%;
+    margin: 0 auto;
+  }
+  &__restaurant {
+    font-size: 2rem;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  &__categorie {
+    font-family: "Kalam";
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 23%;
+    &__titre {
+      font-weight: 300;
+      font-size: 1.4rem;
+      position: relative;
+      height: 1.4rem;
+      width: 10rem;
+      &::before {
+        content: url(/img/separateur-n-enchantee.svg);
+        display: block;
+        height: 1rem;
+        width: 7.5rem;
+        position: absolute;
+        left: -8rem;
+        bottom: 0.5rem;
+      }
+      &::after {
+        content: url(/img/separateur-n-enchantee.svg);
+        display: block;
+        height: 1rem;
+        width: 7.5rem;
+        position: absolute;
+        right: -8rem;
+        bottom: 0.5rem;
+      }
+    }
+  }
+  &__restaurant-petit {
+    margin: 0 auto;
+    font-weight: 300;
+    position: relative;
+    &::before {
+      content: url(/img/note-de-musique-home.svg);
+      display: block;
+      position: absolute;
+      left: -3rem;
+    }
+  }
+}
