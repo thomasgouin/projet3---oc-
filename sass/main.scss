@@ -4,9 +4,11 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/mainbloc";
+@import "./layout/mainbloc-home";
+@import "./layout/mainbloc-menus";
 
 @import "./page/menus";
 @import "./page/home";
+@import "./page/menusv2";
 
 @import "./utilitaires/mediaquerries-home";

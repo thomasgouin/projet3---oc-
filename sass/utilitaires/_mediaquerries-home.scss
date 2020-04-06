@@ -1,11 +1,13 @@
+/* 
+  Ligne 3 - 68 => mediaquerries pour homepage
+  Ligne 70 - 167 => mediaquerries pour pagesmenus
+*/
+
+// Media Querries pour la home page
+
 @media screen AND (min-width: 500px) AND (max-width: 900px) {
-  header {
-    font-size: 2.5rem;
-  }
-  footer {
-    font-size: 2rem;
-  }
-  main {
+
+  .main-home {
     margin-right: 13.2vw;
     margin-left: 13.2vw;
   }
@@ -33,12 +35,6 @@
 }
 
 @media screen AND (min-width: 901px) {
-  header {
-    font-size: 2.5rem;
-  }
-  footer {
-    font-size: 2rem;
-  }
   main {
     margin-right: 8vw;
     margin-left: 8vw;
@@ -70,3 +66,74 @@
     font-size: 1.1rem;
   }
 }
+
+// Media Querries pour les pages menus
+
+@media screen AND (min-width: 420px){
+  header{
+    font-size: 2.5rem;
+  }
+  footer {
+    font-size: 2rem;
+  }
+  .pagemenu-titre{
+    font-size: 3rem;
+  }
+  .type{
+    margin-right: 4vh;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    height: 13.6vh;
+    &__titre{
+      justify-content: space-between;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &__plats{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__description{
+      text-align: left;
+      }
+    }
+  }
+}
+
+@media screen AND (min-width: 685px){
+  .menu-v2{
+    height: 66vh;
+    width: 47vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .type{
+    margin-bottom: 1vh;
+    &__titre{
+      &__description{
+        font-size: 2rem;
+      }
+    }
+    &__plats{
+      &__description{
+        font-size: 1.7rem;
+      }
+      &__prix{
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  .restaurant{
+    font-size: 4rem;
+    &__bas{
+      font-size: 3rem;
+      &::before{
+        left: -1rem;
+        top: 0;
+      }
+    }
+  }
+}
+
+

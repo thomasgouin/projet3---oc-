@@ -87,6 +87,7 @@ video {
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-weight: inherit;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -194,6 +195,83 @@ main {
   justify-content: space-evenly;
 }
 
+.main-v2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pagemenu-titre {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu-v2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 0px 8px #bdbaba;
+  margin-top: 2rem;
+}
+
+.notemusique-top {
+  margin: 3rem auto 0 auto;
+  width: 10%;
+}
+
+.separation {
+  height: 1rem;
+  width: 30%;
+}
+
+.restaurant {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.restaurant__bas {
+  margin: 2rem auto;
+  position: relative;
+  font-size: 1.5rem;
+  width: 40%;
+}
+
+.type {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 200;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14rem;
+}
+.type__titre {
+  display: flex;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2.2rem;
+}
+.type__titre__description {
+  width: 40%;
+  font-size: 1.5rem;
+}
+.type__plats__description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.type__plats__prix {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/*
 .pagemenu-titre {
   font-size: 2rem;
   font-family: "Montserrat";
@@ -203,82 +281,85 @@ main {
 }
 
 .menu {
-  background-color: #fbdfdc;
-  font-family: "Devonshire";
-  color: #3d1319;
+  @include noteenchantee;
+  box-shadow: 0px 0px 6px rgb(214, 214, 214);
   margin: 30px 5vw 0 5vw;
   height: 618px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-.menu__svg-top {
-  width: 8%;
-  margin: 0 auto;
-}
-.menu__restaurant {
-  font-size: 2rem;
-  margin: 0 auto 2rem auto;
-  font-weight: 300;
-}
-.menu__titre {
-  font-family: "Kalam";
-  font-weight: 300;
-  font-size: 1.4rem;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  height: 1.4rem;
-  width: 10rem;
-}
-.menu__titre::before {
-  content: url(/img/separateur-n-enchantee.svg);
-  display: block;
-  height: 1rem;
-  width: 7.5rem;
-  position: absolute;
-  left: -8rem;
-  bottom: 0.5rem;
-}
-.menu__titre::after {
-  content: url(/img/separateur-n-enchantee.svg);
-  display: block;
-  height: 1rem;
-  width: 7.5rem;
-  position: absolute;
-  right: -8rem;
-  bottom: 0.5rem;
-}
-.menu__categorie {
-  font-family: "Kalam";
-  font-weight: 200;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 18%;
-}
-.menu__categorie__plat {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu__categorie__prix {
-  font-weight: 400;
-}
-.menu__restaurant-petit {
-  margin: 0 auto;
-  font-weight: 300;
-  position: relative;
-}
-.menu__restaurant-petit::before {
-  content: url(/img/note-de-musique-home.svg);
-  display: block;
-  position: absolute;
-  left: -3rem;
-}
-
+  border: green 2px solid;
+  &__svg-top {
+    width: 8%;
+    margin: 0 auto;
+  }
+  &__restaurant {
+    font-size: 2rem;
+    margin: 0 auto 2rem auto;
+    font-weight: 300;
+  }
+  &__titre {
+    font-family: "Kalam";
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    height: 1.4rem;
+    width: 10rem;
+    border: red 2px solid;
+    &::before {
+      content: url(/img/separateur-n-enchantee.svg);
+      display: block;
+      height: 1rem;
+      width: 20vw;
+      position: absolute;
+      left: -8rem;
+      bottom: 0.5rem;
+      border: blue 2px solid;
+    }
+    &::after {
+      content: url(/img/separateur-n-enchantee.svg);
+      display: block;
+      height: 1rem;
+      width: 20vw;
+      position: absolute;
+      right: -8rem;
+      bottom: 0.5rem;
+      border: blue 2px solid;
+    }
+  }
+  &__categorie {
+    font-family: "Kalam";
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 18%;
+    border: yellow 2px solid;
+    &__plat {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__prix {
+      font-weight: 400;
+    }
+  }
+  &__restaurant-petit {
+    margin: 0 auto;
+    font-weight: 300;
+    position: relative;
+    &::before {
+      content: url(/img/note-de-musique-home.svg);
+      display: block;
+      position: absolute;
+      left: -3rem;
+    }
+  }
+}*/
 .sommaire {
   display: flex;
   flex-wrap: wrap;
@@ -394,16 +475,92 @@ main {
   margin-top: 10px;
 }
 
+.main-v2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-v2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fbdfdc;
+  box-shadow: 0px 0px 8px #bdbaba;
+  font-family: "Kalam";
+  margin-top: 2rem;
+}
+
+.notemusique-top {
+  margin: 3rem auto 0 auto;
+  width: 10%;
+}
+
+.separation {
+  height: 1rem;
+  width: 30%;
+}
+
+.restaurant {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: "Devonshire";
+  font-weight: 400;
+}
+.restaurant__bas {
+  margin: 2rem auto;
+  font-family: "Devonshire";
+  position: relative;
+  font-size: 1.5rem;
+  width: 40%;
+}
+.restaurant__bas::before {
+  content: url(/img/note-de-musique-home.svg);
+  position: absolute;
+  left: -0.1rem;
+  top: -0.2rem;
+}
+
+.type {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 200;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14rem;
+}
+.type__titre {
+  display: flex;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2.2rem;
+}
+.type__titre__description {
+  width: 40%;
+  font-size: 1.5rem;
+}
+.type__plats {
+  font-size: 1.2rem;
+}
+.type__plats__description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.type__plats__prix {
+  font-weight: 600;
+}
+
+/* 
+  Ligne 3 - 68 => mediaquerries pour homepage
+  Ligne 70 - 167 => mediaquerries pour pagesmenus
+*/
 @media screen and (min-width: 500px) and (max-width: 900px) {
-  header {
-    font-size: 2.5rem;
-  }
-
-  footer {
-    font-size: 2rem;
-  }
-
-  main {
+  .main-home {
     margin-right: 13.2vw;
     margin-left: 13.2vw;
   }
@@ -429,14 +586,6 @@ main {
   }
 }
 @media screen and (min-width: 901px) {
-  header {
-    font-size: 2.5rem;
-  }
-
-  footer {
-    font-size: 2rem;
-  }
-
   main {
     margin-right: 8vw;
     margin-left: 8vw;
@@ -467,6 +616,71 @@ main {
 
   .chicalafrancaise {
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 420px) {
+  header {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+
+  .pagemenu-titre {
+    font-size: 3rem;
+  }
+
+  .type {
+    margin-right: 4vh;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    height: 13.6vh;
+  }
+  .type__titre {
+    justify-content: space-between;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .type__plats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .type__plats__description {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 685px) {
+  .menu-v2 {
+    height: 66vh;
+    width: 47vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .type {
+    margin-bottom: 1vh;
+  }
+  .type__titre__description {
+    font-size: 2rem;
+  }
+  .type__plats__description {
+    font-size: 1.7rem;
+  }
+  .type__plats__prix {
+    font-size: 1.7rem;
+  }
+
+  .restaurant {
+    font-size: 4rem;
+  }
+  .restaurant__bas {
+    font-size: 3rem;
+  }
+  .restaurant__bas::before {
+    left: -1rem;
+    top: 0;
   }
 }
 

@@ -1,3 +1,4 @@
+/*
 .pagemenu-titre {
   font-size: 2rem;
   font-family: "Montserrat";
@@ -8,12 +9,14 @@
 
 .menu {
   @include noteenchantee;
+  box-shadow: 0px 0px 6px rgb(214, 214, 214);
   margin: 30px 5vw 0 5vw;
   height: 618px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border: green 2px solid;
   &__svg-top {
     width: 8%;
     margin: 0 auto;
@@ -32,23 +35,26 @@
     text-align: center;
     height: 1.4rem;
     width: 10rem;
+    border: red 2px solid;
     &::before {
       content: url(/img/separateur-n-enchantee.svg);
       display: block;
       height: 1rem;
-      width: 7.5rem;
+      width: 20vw;
       position: absolute;
       left: -8rem;
       bottom: 0.5rem;
+      border: blue 2px solid;
     }
     &::after {
       content: url(/img/separateur-n-enchantee.svg);
       display: block;
       height: 1rem;
-      width: 7.5rem;
+      width: 20vw;
       position: absolute;
       right: -8rem;
       bottom: 0.5rem;
+      border: blue 2px solid;
     }
   }
   &__categorie {
@@ -58,6 +64,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 18%;
+    border: yellow 2px solid;
     &__plat {
       display: flex;
       flex-direction: column;
@@ -79,4 +86,4 @@
       left: -3rem;
     }
   }
-}
+}*/
