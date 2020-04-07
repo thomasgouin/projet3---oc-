@@ -140,6 +140,10 @@ h1 {
   color: #fdcb46;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   background-color: #579c87;
@@ -214,6 +218,7 @@ main {
   text-align: center;
   box-shadow: 0px 0px 8px #bdbaba;
   margin-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 .separation {
@@ -244,8 +249,8 @@ main {
 }
 .type__titre {
   display: flex;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   font-size: 1.3rem;
   font-weight: 200;
   flex-direction: row;
@@ -358,20 +363,22 @@ main {
 .sommaire {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  font-size: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 .sommaire__carte {
-  width: 38.7vw;
-  max-width: 145px;
-  height: 56vw;
-  max-height: 220px;
+  width: 59.2vw;
+  max-width: 222px;
+  height: 85.8vw;
+  max-height: 322px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
   box-shadow: 0px 0px 6px #00000029;
 }
 
@@ -390,6 +397,7 @@ main {
   border-radius: 10px;
   width: 60%;
   min-width: 145px;
+  max-width: 500px;
   font-size: 1.5rem;
 }
 
@@ -436,7 +444,7 @@ main {
 .chicalafrancaise {
   font-family: "Kurale";
   background-color: #fff5ff;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 .chicalafrancaise__h2 {
   background: -webkit-linear-gradient(-45deg, #d17122 10%, #a6669a 60%, #6b30eb 80%);
@@ -493,16 +501,35 @@ main {
   top: -0.2rem;
 }
 
+.menu-chicfrancaise {
+  background-color: #FFF5FF;
+  font-family: "Crimson Text";
+}
+
+.restaurant-chicfrancaise {
+  font-family: "Kurale";
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
 /* 
   Ligne 3 - 68 => mediaquerries pour homepage
   Ligne 70 - 167 => mediaquerries pour pagesmenus
 */
-@media screen and (min-width: 500px) and (max-width: 900px) {
+@media screen and (min-width: 500px) and (max-width: 1600px) {
   .main-home {
     margin-right: 13.2vw;
     margin-left: 13.2vw;
   }
 
+  .sommaire {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 374px;
+    max-width: 570px;
+  }
   .sommaire__carte {
     width: 29vw;
     min-width: 180px;
@@ -523,7 +550,7 @@ main {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1600px) {
   main {
     margin-right: 8vw;
     margin-left: 8vw;
@@ -532,6 +559,7 @@ main {
   .sommaire {
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
   .sommaire__carte {
     width: 19vw;

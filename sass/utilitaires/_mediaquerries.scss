@@ -5,7 +5,7 @@
 
 // Media Querries pour la home page
 
-@media screen AND (min-width: 500px) AND (max-width: 900px) {
+@media screen AND (min-width: 500px) AND (max-width: 1600px) {
 
   .main-home {
     margin-right: 13.2vw;
@@ -13,6 +13,12 @@
   }
 
   .sommaire {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 374px;
+    max-width: 570px;
     &__carte {
       width: 29vw;
       min-width: 180px;
@@ -34,7 +40,7 @@
   }
 }
 
-@media screen AND (min-width: 901px) {
+@media screen AND (min-width: 1600px) {
   main {
     margin-right: 8vw;
     margin-left: 8vw;
@@ -43,6 +49,7 @@
   .sommaire {
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     &__carte {
       width: 19vw;
       min-width: 170px;
