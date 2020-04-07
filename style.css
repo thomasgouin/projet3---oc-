@@ -651,7 +651,7 @@ main {
     text-align: left;
   }
 }
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 525px) {
   .menu-v2 {
     height: 66vh;
     width: 47vh;
@@ -666,10 +666,10 @@ main {
     font-size: 2rem;
   }
   .type__plats__description {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .type__plats__prix {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .restaurant {
@@ -680,6 +680,35 @@ main {
   }
   .restaurant__bas::before {
     left: -1rem;
+    top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-v2 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu-v2 {
+    margin: 0;
+    height: 73.25vh;
+    width: 51.87vh;
+  }
+
+  .pagemenu-titre {
+    font-size: 3.5rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .restaurant {
+    font-size: 4rem;
+  }
+  .restaurant__bas {
+    font-size: 3rem;
+  }
+  .restaurant__bas::before {
+    left: -3rem;
     top: 0;
   }
 }
