@@ -1,33 +1,23 @@
 .palettedugout {
-    &__menu{
-    background-color: #f9f9f9;
-    font-family: "Kalam";
-    color: #3b3b3b;
-    font-weight: lighter;
-    }
-    &__restaurant{
-    font-family: "Kaushan Script";
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    background: -webkit-linear-gradient(
-        -45deg,
-        #55924d 30%,
-        #7eb137 50%,
-        #c8fa80 70%
-    );
-    @include degradetitre ;
-    }
-    &__titre{
-      font-size: 2rem;
-    }
-    &__plats{
-      font-size: 1.6rem;
-      font-weight: 200;
-    }
-    &__prix{
-      font-size: 1.8rem;
-    }
+  &__menu{
+  background-color: #f9f9f9;
+  font-family: "Kalam";
+  color: #3b3b3b;
+  font-weight: lighter;
   }
+  &__restaurant{
+  font-family: "Kaushan Script";
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  background: -webkit-linear-gradient(
+      -45deg,
+      #55924d 30%,
+      #7eb137 50%,
+      #c8fa80 70%
+  );
+  @include degradetitre ;
+  }
+}
 
 
 

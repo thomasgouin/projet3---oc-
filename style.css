@@ -199,7 +199,7 @@ main {
   justify-content: space-evenly;
 }
 
-.main-v2 {
+.main {
   display: flex;
   flex-direction: column;
 }
@@ -212,7 +212,7 @@ main {
   margin-left: auto;
 }
 
-.menu-v2 {
+.menu {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -252,9 +252,17 @@ main {
 }
 .type__titre__description {
   width: 45%;
+  font-size: 2rem;
 }
 .type__plats {
   margin-top: 1.5rem;
+}
+.type__plats__description {
+  font-size: 1.3rem;
+}
+.type__plats__prix {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
 }
 
 .sommaire {
@@ -386,22 +394,12 @@ main {
 .noteenchantee__separation {
   fill: #3d1319;
 }
-.noteenchantee__titre {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.noteenchantee__plats {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
 .noteenchantee__prix {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .notemusique-top {
   margin: 3rem auto 0 auto;
-  width: 10%;
 }
 
 .restaurant-bas {
@@ -441,18 +439,6 @@ main {
   color: #6F4ECC;
   fill: #6F4ECC;
 }
-.chicalafrancaise__titre {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.chicalafrancaise__plats {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
-.chicalafrancaise__prix {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
 
 .delicepapilles__menu {
   background-color: #f9f9f9;
@@ -478,17 +464,6 @@ main {
 .delicepapilles__separation-bas {
   fill: #229DF9;
 }
-.delicepapilles__titre {
-  font-size: 2rem;
-}
-.delicepapilles__plats {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
-.delicepapilles__prix {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
 
 .palettedugout__menu {
   background-color: #f9f9f9;
@@ -504,16 +479,6 @@ main {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.palettedugout__titre {
-  font-size: 2rem;
-}
-.palettedugout__plats {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
-.palettedugout__prix {
-  font-size: 1.8rem;
 }
 
 /* 
@@ -588,13 +553,11 @@ main {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 600px) {
-  header {
-    font-size: 2.5rem;
-  }
-
-  footer {
-    font-size: 2rem;
+@media screen and (min-width: 510px) {
+  .menu {
+    width: 490px;
+    height: 690px;
+    margin: 2rem auto 0 auto;
   }
 
   .pagemenu-titre {
@@ -602,69 +565,40 @@ main {
   }
 
   .separation {
-    width: 35%;
-  }
-
-  .type {
-    margin-top: 2vh;
-    min-height: 13.6vh;
-    border: solid 3px red;
-  }
-  .type__titre {
-    justify-content: space-between;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .type__titre__description {
     width: 30%;
-  }
-  .type__plats {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    font-size: 1.3;
-  }
-}
-@media screen and (min-width: 525px) {
-  .menu-v2 {
-    min-height: 66vh;
-    width: 47vh;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .type {
-    margin-bottom: 1vh;
-  }
-  .type__titre__description {
-    font-size: 2rem;
-    width: 50%;
-  }
-  .type__plats__description {
-    font-size: 1.2rem;
-  }
-  .type__plats__prix {
-    font-size: 1.3rem;
   }
 
   .restaurant {
-    font-size: 3rem;
+    font-size: 4rem;
   }
-  .restaurant__bas {
-    font-size: 2rem;
+
+  .type__titre__description {
+    width: 40%;
+    font-size: 1.8rem;
   }
-  .restaurant__bas::before {
-    left: -1rem;
-    top: 0;
+  .type__plats {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .type__plats__prix {
+    margin-top: 0;
+  }
+  .type__plats__description {
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 1600px) {
-  .main-v2 {
+  .main {
     flex-direction: row;
     align-items: center;
   }
 
-  .menu-v2 {
+  .menu {
     margin: 0;
     height: 73.25vh;
     width: 51.87vh;
