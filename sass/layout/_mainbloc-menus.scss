@@ -19,52 +19,36 @@
   } 
   .separation{
     height: 1rem;
-    width: 30%;
+    width: 25%;
   }
   
   .restaurant {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 1rem;
     font-weight: 400;
-    &__bas{
-      margin: 2rem auto;
-      position: relative;
-      font-size: 1.5rem;
-      width: 40%;
-    }
   }
   
   .type {
     margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     display: flex;
-    font-size: 1rem;
-    font-weight: 200;
     flex-direction: column;
     justify-content: space-between;
-    height: 14rem;
+    min-height: 14rem;
     &__titre {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       display: flex;
-      margin-right: 2rem;
-      margin-left: 2rem;
-      font-size: 1.3rem;
-      font-weight: 200;
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
-      height: 2.2rem;
+      min-height: 2.2rem;
       &__description{
-        width: 40%;
-        font-size: 1.5rem;
+        width: 45%;
       }
     }
     &__plats {
-      &__description {
-        margin-top: 0.5rem;
-        font-size: 1.2rem;
-      }
-      &__prix{
-        font-weight: 600;
-        font-size: 1.2rem;
-      }
+      margin-top: 1.5rem;
     }
   }

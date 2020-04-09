@@ -1,0 +1,40 @@
+.delicepapilles {
+  &__menu{
+  background-color: #f9f9f9;
+  font-family: "Kalam";
+  font-weight: 200;
+  color: #3b3b3b;
+  }
+  &__restaurant{
+  font-family: "Dancing Script";
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  background: -webkit-linear-gradient(
+    -45deg,
+    #1530b7 10%,
+    #56a7e6 60%,
+    #56a7e6 80%
+  );
+  @include degradetitre;
+  }
+  &__separation-top{
+    fill: #0828DD;
+  }
+  &__separation-middle{
+      fill: #1270F3;
+  }
+  &__separation-bas{
+  fill: #229DF9 ;
+  }
+  &__titre{
+    font-size: 2rem;
+  }
+  &__plats{
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  &__prix{
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+}

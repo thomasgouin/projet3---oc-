@@ -1,15 +1,43 @@
-.menu-chicfrancaise {
-    background-color: #FFF5FF;
-    font-family: "Crimson Text";
+.chicalafrancaise{
+    &__menu {
+        background-color: #FFF5FF;
+        font-family: "Crimson Text";
+    }
+    &__restaurant {
+        font-family: "Kurale";
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        background: -webkit-linear-gradient(
+          -45deg,
+          #d17122 10%,
+          #a6669a 60%,
+          #6b30eb 80%
+        );
+        @include degradetitre ;
+    }
+    &__haut{
+        color:#C67412;
+        fill: #C67412;
+    }
+    &__middle{
+        color: #A56799;
+        fill:#A56799;
+    }
+    &__bas{
+        color: #6F4ECC;
+        fill: #6F4ECC;
+    }
+    &__titre{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &__plats{
+        font-size: 1.6rem;
+        font-weight: 200;
+      }
+    &__prix{
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
 }
-  
-  
-.restaurant-chicfrancaise {
-    font-family: "Kurale";
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
-
-
-
 

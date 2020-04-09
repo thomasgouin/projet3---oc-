@@ -47,7 +47,7 @@
   &__svg {
     width: 10%;
   }
-  &__menu {
+  &__home {
     text-transform: uppercase;
     font-family: "Itim";
     @include texteMenu;
@@ -65,7 +65,7 @@
     );
     @include degradetitre;
   }
-  &__menu {
+  &__home {
     font-family: "Chilanka";
     @include texteMenu;
   }
@@ -83,7 +83,7 @@
     );
     @include degradetitre;
   }
-  &__menu {
+  &__home {
     font-family: "Abril Fatface";
     font-size: 1.3em;
     font-weight: 400;
@@ -104,7 +104,7 @@
     @include degradetitre;
     font-weight: 400;
   }
-  &__menu {
+  &__home {
     font-family: "Chilanka";
     @include texteMenu;
   }

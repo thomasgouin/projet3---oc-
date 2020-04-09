@@ -1,6 +1,28 @@
-.menu-noteenchantee {
+.noteenchantee {
+  
+  &__menu{
   background-color: #fbdfdc;
   font-family: "Kalam";
+  color: #3d1319;
+  }
+  &__restaurant{
+  font-family: "Devonshire";
+  }
+  &__separation{
+    fill: #3d1319;
+  }
+  &__titre{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  &__plats{
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+  &__prix{
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
 }
 
 .notemusique-top{
@@ -8,19 +30,19 @@
   width: 10%;
 }
 
-.restaurant-noteenchantee {
-  font-family: "Devonshire";
-  &__bas{
-    font-family: 'Devonshire';
-    &::before{
-      content: url(/img/note-de-musique-home.svg);
-      position: absolute;
-      left: -.1rem;
-      top: -.2rem;
-    }
-  }
-}
 
+.restaurant-bas{
+  display: flex;
+  font-family: "Devonshire";
+  justify-content: center;
+  margin: 4rem 2rem 0 2rem;
+  font-size: 2rem;
+  font-weight: 200;
+  &__titre{
+    margin-left: 1rem;
+  }
+
+}
 
 
 

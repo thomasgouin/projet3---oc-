@@ -1,126 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Devonshire|Kalam:300,400,700|Montserrat:400,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>ohmyfood - La note enchantée</title>
-  </head>
-  <body>
-    <header>
-      <!-- bande verte avec lien vers accueil-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Abril+Fatface|Chilanka|Dancing+Script:400,500,600,700|Devonshire|Itim|Kaushan+Script|Kurale|Montserrat:400,500,700,800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>ohmyfood - La note enchantée</title>
+</head>
+
+<body>
+  <header>
+    <!-- bande verte avec lien vers accueil-->
+    <a href="/index.html">
       <h1 class="ohmyfood">ohmyfood</h1>
-    </header>
+    </a>
+  </header>
 
-    <main class="main">
-      <!-- bloc principal / marges-->
-      <h2 class="pagemenu-titre">La note enchantée</h2>
-      <section class="menu">
-        <!-- bloc sommaire des menus / flexbox-->
-        <svg
-          class="menu__svg-top"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="41.217"
-          height="43.228"
-          viewBox="0 0 41.217 43.228"
-        >
-          <defs>
-            <linearGradient
-              id="linear-gradient"
-              x1="0.095"
-              y1="0.398"
-              x2="1.167"
-              y2="0.317"
-              gradientUnits="objectBoundingBox"
-            >
-              <stop offset="0" stop-color="#f05561" />
-              <stop offset="1" stop-color="#f6916a" />
-            </linearGradient>
-          </defs>
-          <g
-            id="Note_de_musique"
-            data-name="Note de musique"
-            transform="translate(0 0)"
-          >
-            <path
-              id="Union_2"
-              data-name="Union 2"
-              d="M1.979,42.148a4.328,4.328,0,0,1-1.92-2.81c-.472-2.685,1.953-5.365,5.406-5.977a8.059,8.059,0,0,1,1.413-.125,7.2,7.2,0,0,1,2.851.57l.1.044V7.372h.181L10,7.347A108.16,108.16,0,0,1,40.241.015c.655-.05.882.032.861.191h.017V32.642c.014.061.026.121.037.183a3.943,3.943,0,0,1-.037,1.542v.1H41.1l-.014.054c-.544,2.1-2.688,3.817-5.333,4.286a8.075,8.075,0,0,1-1.415.125,6.825,6.825,0,0,1-3.782-1.078,4.325,4.325,0,0,1-1.921-2.81c-.472-2.685,1.953-5.365,5.406-5.977a8.059,8.059,0,0,1,1.413-.125,7.2,7.2,0,0,1,2.851.57l.1.044V9.646c-14.622.436-24.252,4.394-25.861,5.1V36.942c.014.061.026.121.037.183a3.943,3.943,0,0,1-.037,1.542v.1h-.021l-.014.054c-.545,2.1-2.688,3.817-5.333,4.284a8.1,8.1,0,0,1-1.416.126A6.825,6.825,0,0,1,1.979,42.148ZM12.544,12.5c2.866-.9,14.393-4.352,24.931-5.228a3.663,3.663,0,0,1,.93.005V3.264c-.653.116-1.2.192-1.2.192S17.563,6.147,12.544,9.248v.172c.074.029.058.075,0,.12Z"
-              transform="translate(0 0)"
-              fill="url(#linear-gradient)"
-            />
-          </g>
-        </svg>
-        <h3 class="menu__restaurant">La note enchantée</h3>
-        <h4 class="menu__titre">Prélude</h4>
-        <article class="menu__categorie">
-          <div class="menu__categorie__plat">
-            <p>Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-            <p class="menu__categorie__prix">98€</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Caviar osciètre sur blini à la farine de blé noir</p>
-            <p class="menu__categorie__prix">115€</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Homard et ses puma de potiron mariné aux zests d’orange</p>
-            <p class="menu__categorie__prix">89€</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>
-              Foie gras de canard cuit entier, confiture de figue et pain toasté
-            </p>
-            <p class="menu__categorie__prix">105€</p>
-          </div>
-        </article>
+  <main class="main-v2">
+    <!-- bloc principal / marges-->
+    <h2 class="pagemenu-titre">La note enchantée</h2>
 
-        <h4 class="menu__titre">Point d'orgue</h4>
-        <article class="menu__categorie">
-          <div class="menu__categorie__plat">
-            <p>
-              Noix de coquilles Saint-Jaques sur lit de purée de céleri-rave
-            </p>
-            <p class="menu__categorie__prix">102€</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Langoustine poêlée, purée de patates douces</p>
-            <p class="menu__categorie__prix">205€</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-            <p class="menu__categorie__prix">169€</p>
-          </div>
-        </article>
+    <section class="menu-v2 noteenchantee__menu">
+      <svg class="notemusique-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="41.217" height="43.228" viewBox="0 0 41.217 43.228">
+        <defs>
+          <linearGradient id="linear-gradient" x1="0.095" y1="0.398" x2="1.167" y2="0.317"
+            gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f05561" />
+            <stop offset="1" stop-color="#f6916a" />
+          </linearGradient>
+        </defs>
+        <g id="Note_de_musique" data-name="Note de musique" transform="translate(0 0)">
+          <path id="Union_2" data-name="Union 2"
+            d="M1.979,42.148a4.328,4.328,0,0,1-1.92-2.81c-.472-2.685,1.953-5.365,5.406-5.977a8.059,8.059,0,0,1,1.413-.125,7.2,7.2,0,0,1,2.851.57l.1.044V7.372h.181L10,7.347A108.16,108.16,0,0,1,40.241.015c.655-.05.882.032.861.191h.017V32.642c.014.061.026.121.037.183a3.943,3.943,0,0,1-.037,1.542v.1H41.1l-.014.054c-.544,2.1-2.688,3.817-5.333,4.286a8.075,8.075,0,0,1-1.415.125,6.825,6.825,0,0,1-3.782-1.078,4.325,4.325,0,0,1-1.921-2.81c-.472-2.685,1.953-5.365,5.406-5.977a8.059,8.059,0,0,1,1.413-.125,7.2,7.2,0,0,1,2.851.57l.1.044V9.646c-14.622.436-24.252,4.394-25.861,5.1V36.942c.014.061.026.121.037.183a3.943,3.943,0,0,1-.037,1.542v.1h-.021l-.014.054c-.545,2.1-2.688,3.817-5.333,4.284a8.1,8.1,0,0,1-1.416.126A6.825,6.825,0,0,1,1.979,42.148ZM12.544,12.5c2.866-.9,14.393-4.352,24.931-5.228a3.663,3.663,0,0,1,.93.005V3.264c-.653.116-1.2.192-1.2.192S17.563,6.147,12.544,9.248v.172c.074.029.058.075,0,.12Z"
+            transform="translate(0 0)" fill="url(#linear-gradient)" />
+        </g>
+      </svg>
+      <h3 class="restaurant noteenchantee__restaurant">La note enchantée</h3>
+      <article class="type">
+        <div class="type__titre">
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            
+            <g transform="translate(0 0)">
+              <path
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+          <h4 class="type__titre__description noteenchantee__titre">Prélude</h4>
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            <g transform="translate(0 0)">
+              <path 
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Ravioles de foie gras accompagnés de leur crème à la truffe
+          </p>
+          <p class="noteenchantee__prix">98€</p>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Caviar osciètre sur blini à la farine de blé noir
+          </p>
+          <p class="noteenchantee__prix">115€</p>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Homard et ses puma de potiron mariné aux zests d’orange
+          </p>
+          <p class="noteenchantee__prix">89€</p>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Foie gras de canard cuit entier, confiture de figue et pain toasté
+          </p>
+          <p class="noteenchantee__prix">105€</p>
+        </div>
+      </article>
+      <article class="type">
+        <div class="type__titre">
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            <g transform="translate(0 0)">
+              <path 
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+          <h4 class="type__titre__description noteenchantee__titre">Point d'orgue</h4>
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            
+            <g transform="translate(0 0)">
+              <path 
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Noix de coquilles Saint-Jaques sur lit de purée de céleri-rave
+          </p>
+          <p class="noteenchantee__prix">102€</p>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Langoustine poêlée, purée de patates douces
+          </p>
+          <p class="noteenchantee__prix">205€</p>
+        </div>
+        <div class="type__plats">
+          <p class="noteenchantee__plats">
+            Mijoté de queue de boeuf et riz sauvage aux zests de citron
+          </p>
+          <p class="noteenchantee__prix">169€</p>
+        </div>
+      </article>
+      <article class="type">
+        <div class="type__titre">
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            
+            <g transform="translate(0 0)">
+              <path 
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+          <h4 class="type__titre__description noteenchantee__titre">Mouvement Final</h4>
+          <svg class="separation noteenchantee__separation" xmlns="http://www.w3.org/2000/svg" width="116.627" height="4"
+            viewBox="0 0 116.627 4">
+            <g transform="translate(0 0)">
+              <path
+                d="M528.823,256.728c-3.542-1.465.8-2.289,2.569-2.619s17.121,0,17.121,0,5.173.469,18.04.733,26.366,0,26.366,0,13.127-.011,24.29-.733,27.78.281,26.854.733.052,2.267-5.736,2.557-1.126.24-6.99,0-5.157.9-17.257,0c-4.561-.339-9.507-.029-13.258,0-5.729.044-12.07,0-12.07,0s-11.4,1.025-17.53,0c-.205,0-10.536-.024-13.766,0-4.395.03-13.3,0-13.3,0S532.365,258.194,528.823,256.728Z"
+                transform="translate(-527.472 -253.856)" />
+            </g>
+          </svg>
+        </div>
+        <p class="type__plats noteenchantee__plats">
+          Macaron noisette et chocolat, glace au caramel brun et sel de
+          guérande
+        </p>
+        <p class="type__plats noteenchantee__plats">
+          Baba au rhum revisité avec son coulis de citron
+        </p>
+        <p class="type__plats noteenchantee__plats">
+          Tarte au citron meringuée déstructurée
+        </p>
+      </article>
+      <div class="restaurant-bas">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.847" height="18.157" viewBox="0 0 16.847 18.157"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="0.095" y1="0.398" x2="1.167" y2="0.317" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#f05561"/><stop offset="1" stop-color="#f6916a"/></linearGradient></defs><g transform="translate(0)"><path class="a" d="M.809,17.7a1.82,1.82,0,0,1-.785-1.18,2.416,2.416,0,0,1,2.21-2.511,3.208,3.208,0,0,1,.578-.053,2.874,2.874,0,0,1,1.165.24l.041.018V3.1h.074l0-.01A43.265,43.265,0,0,1,16.448.006c.268-.021.361.014.352.08h.007V13.711c.006.025.011.051.015.077a1.7,1.7,0,0,1-.015.648v.04H16.8l-.006.023a2.675,2.675,0,0,1-2.18,1.8,3.214,3.214,0,0,1-.578.053,2.735,2.735,0,0,1-1.546-.453,1.819,1.819,0,0,1-.785-1.18,2.416,2.416,0,0,1,2.21-2.511,3.208,3.208,0,0,1,.578-.053,2.874,2.874,0,0,1,1.165.24l.041.018V4.052A29.168,29.168,0,0,0,5.127,6.194v9.323c.006.025.011.051.015.077a1.7,1.7,0,0,1-.015.648v.041H5.119l-.006.023a2.674,2.674,0,0,1-2.18,1.8,3.225,3.225,0,0,1-.579.053A2.735,2.735,0,0,1,.809,17.7ZM5.127,5.249a51.6,51.6,0,0,1,10.191-2.2,1.457,1.457,0,0,1,.38,0V1.371c-.267.049-.491.081-.491.081S7.179,2.582,5.127,3.884v.072c.03.012.024.031,0,.051Z" transform="translate(0 0)"/></g></svg>
+        <h3 class="restaurant-bas__titre">La note enchantée</h3>
+      </div>
+    </section>
+  </main>
 
-        <h4 class="menu__titre">Mouvement final</h4>
-        <article class="menu__categorie">
-          <div class="menu__categorie__plat">
-            <p>
-              Macaron noisette et chocolat, glace au caramel brun et sel de
-              guérande
-            </p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Baba au rhum revisité avec son coulis de citron</p>
-          </div>
-          <div class="menu__categorie__plat">
-            <p>Tarte au citron meringuée déstructurée</p>
-          </div>
-        </article>
-        <h3 class="menu__restaurant-petit">La note enchantée</h3>
-      </section>
-    </main>
+  <footer>
+    <div class="bouton mentionslegales">Mentions légales</div>
+    <div class="bouton contactez-nous">Contactez-nous</div>
+  </footer>
+</body>
 
-    <footer>
-      <div class="bouton mentionslegales">Mentions légales</div>
-      <div class="bouton contactez-nous">Contactez-nous</div>
-    </footer>
-  </body>
 </html>
