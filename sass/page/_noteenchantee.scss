@@ -13,13 +13,9 @@
   &__prix{
     font-weight: 600;
   }
-  &__titre{
-    background: -webkit-linear-gradient(to top,#3d1319 0%,#3d1319 10%, transparent 10.01%, transparent 100%);
-    background-size: 0% 100%;
-      transition: background-size .3s ease-in-out;
-      &:hover{
-        background-size: 100% 100%;
-      }
+  &__soulignement{
+    background: linear-gradient(to top,#3d1319 0%, #3d1319 10%, transparent 10.01%) no-repeat;
+    @include soulignementmenu;
   }
 }
 

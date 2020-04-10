@@ -17,13 +17,8 @@
   );
   @include degradetitre ;
   }
-  &__titre{
-    background: -webkit-linear-gradient(
-      to top,
-      #55924d 30%,
-      #7eb137 50%,
-      #c8fa80 70%
-    );
+  &__soulignement{
+    background: linear-gradient(to top,#55924d 0%, #55924d 10%, transparent 10.01%) no-repeat;
     @include soulignementmenu;
   }
 }

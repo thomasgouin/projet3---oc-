@@ -18,24 +18,24 @@
     &__haut{
         color:#C67412;
         fill: #C67412;
-        &__titre{
-            background: linear-gradient(to top, #C67412 0%, #C67412 40%, transparent 41.01%) no-repeat;
+        &__soulignement{
+            background: linear-gradient(to top,#C67412 0%, #C67412 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
         }
     }
     &__middle{
         color: #A56799;
         fill:#A56799;
-        &__titre{
-            background: linear-gradient(to top, #A56799 0%, #A56799 20%, transparent 20.01%) no-repeat;
+        &__soulignement{
+            background: linear-gradient(to top,#A56799 0%, #A56799 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
         }
     }
     &__bas{
         color: #6F4ECC;
         fill: #6F4ECC;
-        &__titre{
-            background: linear-gradient(to top, #6F4ECC 0%, #6F4ECC 20%, transparent 20.01%) no-repeat;
+        &__soulignement{
+            background: linear-gradient(to top,#6F4ECC 0%, #6F4ECC 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
         }
     }

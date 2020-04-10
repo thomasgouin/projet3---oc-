@@ -26,4 +26,16 @@
   &__separation-bas{
   fill: #229DF9 ;
   }
+  &__soulignement-top{
+    background: linear-gradient(to top,#0828DD 0%, #0828DD 10%, transparent 10.01%) no-repeat;
+    @include soulignementmenu;
+  }
+  &__soulignement-middle{
+    background: linear-gradient(to top,#1270F3 0%, #1270F3 10%, transparent 10.01%) no-repeat;
+    @include soulignementmenu;
+  }
+  &__soulignement-bas{
+    background: linear-gradient(to top,#229DF9 0%, #229DF9 10%, transparent 10.01%) no-repeat;
+    @include soulignementmenu;
+  }
 }
