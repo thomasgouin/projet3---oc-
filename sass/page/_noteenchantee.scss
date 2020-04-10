@@ -13,6 +13,10 @@
   &__prix{
     font-weight: 600;
   }
+  &__titre{
+    background: -webkit-linear-gradient(to top,#3d1319 0%,#3d1319 10%, transparent 10.01%, transparent 100%);
+    @include soulignementmenu;
+  }
 }
 
 .notemusique-top{

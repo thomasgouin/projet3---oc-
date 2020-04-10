@@ -254,7 +254,7 @@ main {
   min-height: 2.2rem;
 }
 .type__titre__description {
-  width: 45%;
+  width: auto;
   font-size: 2rem;
 }
 .type__plats {
@@ -400,6 +400,14 @@ main {
 .noteenchantee__prix {
   font-weight: 600;
 }
+.noteenchantee__titre {
+  background: -webkit-linear-gradient(to top, #3d1319 0%, #3d1319 10%, transparent 10.01%, transparent 100%);
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+.noteenchantee__titre:hover {
+  background-size: 100% 100%;
+}
 
 .notemusique-top {
   width: 4rem;
@@ -441,13 +449,37 @@ main {
   color: #C67412;
   fill: #C67412;
 }
+.chicalafrancaise__haut__titre {
+  background: linear-gradient(to top, #C67412 0%, #C67412 20%, transparent 20.01%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+.chicalafrancaise__haut__titre:hover {
+  background-size: 100% 100%;
+}
 .chicalafrancaise__middle {
   color: #A56799;
   fill: #A56799;
 }
+.chicalafrancaise__middle__titre {
+  background: linear-gradient(to top, #A56799 0%, #A56799 20%, transparent 20.01%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+.chicalafrancaise__middle__titre:hover {
+  background-size: 100% 100%;
+}
 .chicalafrancaise__bas {
   color: #6F4ECC;
   fill: #6F4ECC;
+}
+.chicalafrancaise__bas__titre {
+  background: linear-gradient(to top, #6F4ECC 0%, #6F4ECC 20%, transparent 20.01%) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+.chicalafrancaise__bas__titre:hover {
+  background-size: 100% 100%;
 }
 
 .delicepapilles__menu {
@@ -489,6 +521,14 @@ main {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.palettedugout__titre {
+  background: -webkit-linear-gradient(to top, #55924d 30%, #7eb137 50%, #c8fa80 70%);
+  background-size: 0% 100%;
+  transition: background-size 0.3s ease-in-out;
+}
+.palettedugout__titre:hover {
+  background-size: 100% 100%;
 }
 
 /* 
