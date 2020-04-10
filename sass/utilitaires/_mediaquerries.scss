@@ -5,13 +5,18 @@
 
 // Media Querries pour la home page
 
-@media screen AND (min-width: 500px) AND (max-width: 1600px) {
+@media screen AND (min-width: 500px) AND (max-width: 1910px) {
 
   .main-home {
     margin-right: 13.2vw;
     margin-left: 13.2vw;
   }
-
+  .ohmyfood{
+    font-size: 4vh;
+  }
+  footer{
+    font-size: 2vh;
+  }
   .sommaire {
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,12 +45,17 @@
   }
 }
 
-@media screen AND (min-width: 1600px) {
-  main {
-    margin-right: 8vw;
-    margin-left: 8vw;
+@media screen AND (min-width: 1911px) {
+  .main-home {
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
   }
-
+  .ohmyfood{
+    font-size: 6vh;
+  }
+  footer{
+    font-size: 3vh;
+  }
   .sommaire {
     justify-content: space-between;
     align-items: center;
@@ -57,7 +67,7 @@
       height: 27vw;
       min-height: 260px;
       max-height: 550px;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       margin-bottom: 0;
       margin-right: 2vw;
     }
@@ -70,7 +80,7 @@
   }
 
   .chicalafrancaise {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 }
 
@@ -81,6 +91,7 @@
     width: 490px;
     height: 690px;
     margin: 2rem auto 0 auto;
+    padding-bottom: 0;
   }
 
   .pagemenu-titre{
@@ -117,7 +128,7 @@
   }
 }
 
-@media screen AND (min-width: 1600px){
+@media screen AND (min-width: 1910px){
   .main{
     flex-direction: row;
     align-items: center;
@@ -126,20 +137,56 @@
     margin: 0;
     height: 73.25vh;
     width: 51.87vh;
+    min-height: 83rem;
+    min-width: 59rem;
+    padding-bottom: 5vh;
   }
   .pagemenu-titre {
-    font-size: 3.5rem;
+    font-size: 6rem;
     margin-right: 0;
     margin-left: 0;
   }
   .restaurant{
-    font-size: 4rem;
-    &__bas{
-      font-size: 3rem;
-      &::before{
-        left: -3rem;
-        top: 0;
+    margin-top: 8vh;
+    font-size: 5rem;
+  }
+  
+  .type {
+    margin-top: 3.75vh;
+    margin-right: 3.75vh;
+    margin-left: 3.75vh;
+    &__titre {
+      margin-bottom: 0;
+      &__description{
+        width: 45%;
+        font-size: 2.1rem;
+      }
+    }
+    &__plats {
+      margin-top: 1.8vh;
+      align-items: center;
+      &__description{
+        font-size: 1.5rem;
+      }
+      &__prix{
+        font-size: 1.5rem;
       }
     }
   }
+
+  .notemusique-top{
+    margin: 6vh auto 0 auto;
+  }
+  .restaurant-bas{
+    font-size: 3.75vh;
+    &__svg{
+      background-size: 50px;
+    }
+  }
+
+  .noteenchantee__restaurant{
+    margin-top: 1rem;
+    font-size: 5rem;
+  }
+  
 }

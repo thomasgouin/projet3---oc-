@@ -154,9 +154,12 @@ header {
   position: fixed;
   top: 0;
   font-family: "Montserrat";
-  font-size: 1.5rem;
   font-weight: bold;
   z-index: 100000;
+}
+
+.ohmyfood {
+  font-size: 8vw;
 }
 
 footer {
@@ -170,7 +173,7 @@ footer {
   bottom: 0;
   font-family: "Montserrat";
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 4vw;
 }
 
 .mentionslegales {
@@ -238,7 +241,7 @@ main {
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   min-height: 14rem;
 }
 .type__titre {
@@ -399,19 +402,26 @@ main {
 }
 
 .notemusique-top {
-  margin: 3rem auto 0 auto;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem auto 0 auto;
 }
 
 .restaurant-bas {
   display: flex;
   font-family: "Devonshire";
   justify-content: center;
+  align-items: center;
   margin: 4rem 2rem 0 2rem;
-  font-size: 2rem;
-  font-weight: 200;
 }
 .restaurant-bas__titre {
   margin-left: 1rem;
+  font-size: 3rem;
+  font-weight: 200;
+}
+.restaurant-bas__svg {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .chicalafrancaise__menu {
@@ -485,10 +495,18 @@ main {
   Ligne 3 - 68 => mediaquerries pour homepage
   Ligne 70 - 167 => mediaquerries pour pagesmenus
 */
-@media screen and (min-width: 500px) and (max-width: 1600px) {
+@media screen and (min-width: 500px) and (max-width: 1910px) {
   .main-home {
     margin-right: 13.2vw;
     margin-left: 13.2vw;
+  }
+
+  .ohmyfood {
+    font-size: 4vh;
+  }
+
+  footer {
+    font-size: 2vh;
   }
 
   .sommaire {
@@ -519,10 +537,18 @@ main {
     font-size: 1.1rem;
   }
 }
-@media screen and (min-width: 1600px) {
-  main {
-    margin-right: 8vw;
-    margin-left: 8vw;
+@media screen and (min-width: 1911px) {
+  .main-home {
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+  }
+
+  .ohmyfood {
+    font-size: 6vh;
+  }
+
+  footer {
+    font-size: 3vh;
   }
 
   .sommaire {
@@ -537,7 +563,7 @@ main {
     height: 27vw;
     min-height: 260px;
     max-height: 550px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 0;
     margin-right: 2vw;
   }
@@ -550,7 +576,7 @@ main {
   }
 
   .chicalafrancaise {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 510px) {
@@ -558,6 +584,7 @@ main {
     width: 490px;
     height: 690px;
     margin: 2rem auto 0 auto;
+    padding-bottom: 0;
   }
 
   .pagemenu-titre {
@@ -592,7 +619,7 @@ main {
     font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1910px) {
   .main {
     flex-direction: row;
     align-items: center;
@@ -602,23 +629,59 @@ main {
     margin: 0;
     height: 73.25vh;
     width: 51.87vh;
+    min-height: 83rem;
+    min-width: 59rem;
+    padding-bottom: 5vh;
   }
 
   .pagemenu-titre {
-    font-size: 3.5rem;
+    font-size: 6rem;
     margin-right: 0;
     margin-left: 0;
   }
 
   .restaurant {
-    font-size: 4rem;
+    margin-top: 8vh;
+    font-size: 5rem;
   }
-  .restaurant__bas {
-    font-size: 3rem;
+
+  .type {
+    margin-top: 3.75vh;
+    margin-right: 3.75vh;
+    margin-left: 3.75vh;
   }
-  .restaurant__bas::before {
-    left: -3rem;
-    top: 0;
+  .type__titre {
+    margin-bottom: 0;
+  }
+  .type__titre__description {
+    width: 45%;
+    font-size: 2.1rem;
+  }
+  .type__plats {
+    margin-top: 1.8vh;
+    align-items: center;
+  }
+  .type__plats__description {
+    font-size: 1.5rem;
+  }
+  .type__plats__prix {
+    font-size: 1.5rem;
+  }
+
+  .notemusique-top {
+    margin: 6vh auto 0 auto;
+  }
+
+  .restaurant-bas {
+    font-size: 3.75vh;
+  }
+  .restaurant-bas__svg {
+    background-size: 50px;
+  }
+
+  .noteenchantee__restaurant {
+    margin-top: 1rem;
+    font-size: 5rem;
   }
 }
 
