@@ -15,7 +15,11 @@
   }
   &__titre{
     background: -webkit-linear-gradient(to top,#3d1319 0%,#3d1319 10%, transparent 10.01%, transparent 100%);
-    @include soulignementmenu;
+    background-size: 0% 100%;
+      transition: background-size .3s ease-in-out;
+      &:hover{
+        background-size: 100% 100%;
+      }
   }
 }
 
