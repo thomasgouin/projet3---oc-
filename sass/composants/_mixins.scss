@@ -16,7 +16,19 @@
   &:hover{
     background-size: 100% 100%;
   }
-  
+}
+
+@mixin pointsuspension{
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+
+@mixin wigglefooter{
+  &:hover{
+  animation: wiggle 200ms cubic-bezier(.4,.1,.6,.9);
+  animation-iteration-count: 3;
+  }
 }
 
 @mixin texteMenu {

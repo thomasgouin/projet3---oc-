@@ -144,6 +144,25 @@ a {
   text-decoration: none;
 }
 
+@keyframes wiggle {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
+@keyframes pointsuspension {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
 header {
   width: 100%;
   background-color: #579c87;
@@ -160,6 +179,9 @@ header {
 
 .ohmyfood {
   font-size: 8vw;
+}
+.ohmyfood:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -178,17 +200,33 @@ footer {
 
 .mentionslegales {
   width: 44%;
+  background-color: #579c87;
+  font-family: "Montserrat";
   color: #fdcb46;
-  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+}
+.mentionslegales:hover {
+  animation: wiggle 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 3;
 }
 
 .contactez-nous {
   width: 44%;
-  color: #fdcb46;
-  padding-right: 5%;
   text-align: right;
+  background-color: #579c87;
+  font-family: "Montserrat";
+  color: #fdcb46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+}
+.contactez-nous:hover {
+  animation: wiggle 200ms cubic-bezier(0.4, 0.1, 0.6, 0.9);
+  animation-iteration-count: 3;
 }
 
 main {
@@ -299,12 +337,30 @@ main {
   margin-left: auto;
   margin-right: auto;
   height: 10vw;
-  min-height: 30px;
+  min-height: 50px;
   border-radius: 10px;
   width: 60%;
-  min-width: 145px;
+  min-width: 300px;
   max-width: 500px;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
+}
+.prochainement:hover > .point {
+  animation: pointsuspension 300ms infinite ease;
+}
+.prochainement:hover > .point--1 {
+  animation-delay: 80ms;
+}
+.prochainement:hover > .point--2 {
+  animation-delay: 160ms;
+}
+.prochainement:hover > .point--3 {
+  animation-delay: 240ms;
+}
+
+.point {
+  margin-left: 1rem;
+  font-size: 1rem;
+  padding-top: 1.5rem;
 }
 
 .noteenchantee {
