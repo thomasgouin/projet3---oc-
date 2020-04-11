@@ -13,4 +13,7 @@ header {
 }
 .ohmyfood{
   font-size: 8vw;
+  &:hover{
+    text-decoration: underline;
+  }
 }
