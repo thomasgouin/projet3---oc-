@@ -312,18 +312,28 @@ main {
   align-items: center;
   font-size: 1.5rem;
 }
-.sommaire__carte {
+.sommaire__liens {
   width: 59.2vw;
-  max-width: 222px;
+  max-width: 22.2rem;
   height: 85.8vw;
-  max-height: 322px;
+  max-height: 32.2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0px 0px 0.6rem #00000029;
+  overflow: hidden;
+}
+.sommaire__liens__carte {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-bottom: 2.5rem;
-  box-shadow: 0px 0px 6px #00000029;
+  animation: transform 1s, opacity 2s, ease;
+}
+.sommaire__liens__carte:hover {
+  transform: scale(1.2);
+  opacity: 0.75;
 }
 
 .prochainement {
@@ -337,11 +347,11 @@ main {
   margin-left: auto;
   margin-right: auto;
   height: 10vw;
-  min-height: 50px;
-  border-radius: 10px;
+  min-height: 5rem;
+  border-radius: 1rem;
   width: 60%;
-  min-width: 300px;
-  max-width: 500px;
+  min-width: 30rem;
+  max-width: 50rem;
   font-size: 2.3rem;
 }
 .prochainement:hover > .point {
@@ -384,7 +394,7 @@ main {
   text-transform: uppercase;
   font-family: "Itim";
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .delicedespapilles {
@@ -400,7 +410,7 @@ main {
 .delicedespapilles__home {
   font-family: "Chilanka";
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .chicalafrancaise {
@@ -419,7 +429,7 @@ main {
   font-size: 1.3em;
   font-weight: 400;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1rem;
   color: #c67412;
 }
 
@@ -437,7 +447,7 @@ main {
 .palettedugout__home {
   font-family: "Chilanka";
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .noteenchantee__menu {
@@ -635,7 +645,7 @@ main {
     min-width: 374px;
     max-width: 570px;
   }
-  .sommaire__carte {
+  .sommaire__liens {
     width: 29vw;
     min-width: 180px;
     max-width: 222px;
@@ -674,7 +684,7 @@ main {
     align-items: center;
     flex-direction: row;
   }
-  .sommaire__carte {
+  .sommaire__liens {
     width: 19vw;
     min-width: 170px;
     max-width: 400px;
