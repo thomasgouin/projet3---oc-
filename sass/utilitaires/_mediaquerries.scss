@@ -190,3 +190,28 @@
   }
   
 }
+
+// Media Querries pour la page mentions légales
+
+@media screen AND (min-width: 1910px){
+  .pmentionslegales{
+    font-size: 3rem;
+    &__h2{
+      font-size: 6rem;
+    }
+    &__paragraph{
+      font-size: 3rem;
+      &::first-letter{
+        font-size: 4rem;
+      }
+    }
+    &__h3{
+      font-size: 4rem;
+      margin-left: 14rem;
+      margin-top: 8rem;
+    }
+    &__liste{
+      margin-left: 8rem;
+    }
+  }
+}

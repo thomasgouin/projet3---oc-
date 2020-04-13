@@ -871,5 +871,27 @@ main {
     font-size: 5rem;
   }
 }
+@media screen and (min-width: 1910px) {
+  .pmentionslegales {
+    font-size: 3rem;
+  }
+  .pmentionslegales__h2 {
+    font-size: 6rem;
+  }
+  .pmentionslegales__paragraph {
+    font-size: 3rem;
+  }
+  .pmentionslegales__paragraph::first-letter {
+    font-size: 4rem;
+  }
+  .pmentionslegales__h3 {
+    font-size: 4rem;
+    margin-left: 14rem;
+    margin-top: 8rem;
+  }
+  .pmentionslegales__liste {
+    margin-left: 8rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
