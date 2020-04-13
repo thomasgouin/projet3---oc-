@@ -1,0 +1,58 @@
+.pmentionslegales{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    &__h2{
+        font-size: 3rem;
+        color: $color-secondary;
+        text-align: center;
+        text-decoration: underline;
+    }
+    &__introduction{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-weight: 600;
+    }
+    &__paragraph{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        &::first-letter{
+            font-size: 2rem;
+            color: $color-secondary;
+        }
+    }
+    &__h3{
+        font-size: 2rem;
+        margin-left: 2rem;
+        color: $color-secondary;
+        text-decoration: underline;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__liste{
+        margin-top: 1.2rem;
+        padding-left: 2rem;
+        margin-bottom: 1.2rem;
+        position: relative;
+        &::before{
+            content: url(/img/mentions-légales/point-13px.png);
+            position: absolute;
+            left: -.2rem;
+
+        }
+    }
+    &__liens{
+        color: $color-secondary;
+        text-decoration: underline;
+        &:hover{
+            color: $color-primary;
+        }
+    }
+    &__attention{
+        color: rgb(185, 60, 60);
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    
+}

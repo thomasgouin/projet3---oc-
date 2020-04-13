@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 10px;
 }
@@ -617,6 +618,63 @@ main {
 }
 .palettedugout__soulignement:hover {
   background-size: 100% 100%;
+}
+
+.pmentionslegales {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+.pmentionslegales__h2 {
+  font-size: 3rem;
+  color: #579c87;
+  text-align: center;
+  text-decoration: underline;
+}
+.pmentionslegales__introduction {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.pmentionslegales__paragraph {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.pmentionslegales__paragraph::first-letter {
+  font-size: 2rem;
+  color: #579c87;
+}
+.pmentionslegales__h3 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #579c87;
+  text-decoration: underline;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pmentionslegales__liste {
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.pmentionslegales__liste::before {
+  content: url(/img/mentions-légales/point-13px.png);
+  position: absolute;
+  left: -0.2rem;
+}
+.pmentionslegales__liens {
+  color: #579c87;
+  text-decoration: underline;
+}
+.pmentionslegales__liens:hover {
+  color: #fdcb46;
+}
+.pmentionslegales__attention {
+  color: #b93c3c;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 /* 
