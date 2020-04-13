@@ -167,7 +167,8 @@ a {
 header {
   width: 100%;
   background-color: #579c87;
-  min-height: 10.5%;
+  height: 10.5%;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,11 +331,11 @@ main {
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  animation: transform 1s, opacity 2s, ease;
+  transition: transform 1.2s, opacity 0.8s;
 }
 .sommaire__liens__carte:hover {
   transform: scale(1.2);
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .prochainement {

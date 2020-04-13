@@ -21,10 +21,10 @@
       justify-content: space-around;
       align-items: center;
       text-align: center;
-      animation: transform 1s, opacity 2s, ease;
+      transition: transform 1.2s, opacity .8s;
       &:hover{
         transform: scale(1.2);
-        opacity: .75;
+        opacity: .80;
       }
       
     }
