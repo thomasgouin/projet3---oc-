@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 10px;
 }
@@ -661,7 +660,7 @@ main {
   position: relative;
 }
 .pmentionslegales__liste::before {
-  content: url(/img/mentions-légales/point-13px.png);
+  content: url(/img/mentions-legales/point-13px.png);
   position: absolute;
   left: -0.2rem;
 }
