@@ -611,9 +611,6 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.palettedugout__restaurant__separation {
-  fill: #55924d;
-}
 .palettedugout__soulignement {
   background: linear-gradient(to top, #55924d 0%, #55924d 10%, transparent 10.01%) no-repeat;
   background-size: 0% 100%;
@@ -663,7 +660,7 @@ main {
   position: relative;
 }
 .pmentionslegales__liste::before {
-  content: url(/img/mentions-legales/point-13px.png);
+  content: url(img/mentions-legales/point-13px.png);
   position: absolute;
   left: -0.2rem;
 }
