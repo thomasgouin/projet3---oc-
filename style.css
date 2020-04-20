@@ -515,6 +515,8 @@ main {
 }
 .chicalafrancaise__haut {
   color: #C67412;
+}
+.chicalafrancaise__haut__separation {
   fill: #C67412;
 }
 .chicalafrancaise__haut__soulignement {
@@ -527,6 +529,8 @@ main {
 }
 .chicalafrancaise__middle {
   color: #A56799;
+}
+.chicalafrancaise__middle__separation {
   fill: #A56799;
 }
 .chicalafrancaise__middle__soulignement {
@@ -539,6 +543,8 @@ main {
 }
 .chicalafrancaise__bas {
   color: #6F4ECC;
+}
+.chicalafrancaise__bas__separation {
   fill: #6F4ECC;
 }
 .chicalafrancaise__bas__soulignement {

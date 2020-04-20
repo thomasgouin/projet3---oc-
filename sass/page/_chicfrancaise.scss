@@ -17,7 +17,10 @@
     }
     &__haut{
         color:#C67412;
+        &__separation{
         fill: #C67412;
+        }
+        
         &__soulignement{
             background: linear-gradient(to top,#C67412 0%, #C67412 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
@@ -25,7 +28,9 @@
     }
     &__middle{
         color: #A56799;
-        fill:#A56799;
+        &__separation{
+            fill:#A56799;
+        }
         &__soulignement{
             background: linear-gradient(to top,#A56799 0%, #A56799 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
@@ -33,7 +38,10 @@
     }
     &__bas{
         color: #6F4ECC;
-        fill: #6F4ECC;
+        &__separation{
+            fill: #6F4ECC;
+        }
+        
         &__soulignement{
             background: linear-gradient(to top,#6F4ECC 0%, #6F4ECC 10%, transparent 10.01%) no-repeat;
             @include soulignementmenu;
